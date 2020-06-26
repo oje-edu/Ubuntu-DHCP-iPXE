@@ -1,0 +1,7 @@
+# UBUNTU
+# /etc/default/tftpd-hpa
+
+TFTP_USERNAME="tftp"
+TFTP_DIRECTORY="/tftpboot"
+TFTP_ADDRESS=":69"
+TFTP_OPTIONS="--secure -B 1468"
