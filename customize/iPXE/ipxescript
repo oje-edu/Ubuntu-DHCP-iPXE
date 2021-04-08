@@ -29,5 +29,5 @@ echo -n Please enter tftp server: && read next-server && goto netboot || goto se
 :netboot
 set boot-url boot.hidden.mindblast.space
 # chain tftp://${next-server}/default.ipxe ||
-chain tftp://${boot-url}/boot.hidden.mindblast.space ||
+chain tftp://${boot-url}/yo.lan ||
 prompt --key s --timeout 10000 Chainloading failed, hit 's' for the iPXE shell; reboot in 10 seconds && shell || reboot

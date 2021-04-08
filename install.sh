@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update;sudo apt upgrade -y
+sudo apt update;sudo apt dist-upgrade -y
 
 CWD="$(pwd)"
 
@@ -41,7 +41,7 @@ sudo install -v -m 0644 -g tftp -o tftp bin-x86_64-efi/ipxe.efi /tftpboot/ipxe.e
 sudo install -v -m 0644 -g tftp -o tftp bin-x86_64-efi/snponly.efi /tftpboot/snponly.efi
 
 # Symlink undionly.kpxe undionly.0 
-sudo ln -s /tftpboot/undionly.kpxe /tftpboot/undionly.0
+#sudo ln -s /tftpboot/undionly.kpxe /tftpboot/undionly.0
 
 # Restart the Services
 sudo systemctl restart isc-dhcp-server
