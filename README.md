@@ -19,6 +19,11 @@ sudo apt install git -y && git clone https://github.com/oje-edu/Ubuntu-DHCP-iPXE
 ## NOTE:
 the inside bash "script" is very low level (so everybody can understood it without having a PHD) - I know there my be some "better" solutions (ansible, netboot.xyz etc) for doing this. 
 
+## Uninstall
+
+```bash
+cd ~/dhcp-setup && sudo bash uninstall.sh
+```
 
 ### forked from psychopomposwow
 YEAH surprise ... its one of my old account's
